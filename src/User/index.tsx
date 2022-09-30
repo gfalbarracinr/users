@@ -1,6 +1,7 @@
 import React from 'react';
+import UserType from '../Types/UserType';
 
-const User: React.FunctionComponent = ({name, age}) => {
+const User: React.FunctionComponent<UserType> = ({ name, age }: UserType) => {
   return (
     <article>
       <p>{name}</p>
